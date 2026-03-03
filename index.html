@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieVault - Your Film Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-icon"></div>
+            <h1 class="logo-text">MOVIEVAULT</h1>
+        </div>
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search for movie, actor, or director...">
+        </div>
+        <button class="login-btn">Log In</button>
+    </header>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Filters</h3>
+                <span class="chevron">❯</span>
+            </div>
+            
+            <div class="filter-section">
+                <label>Genre:</label>
+                <select>
+                    <option>Genre</option>
+                    <option>Action</option>
+                    <option>Sci-Fi</option>
+                </select>
+            </div>
+
+            <div class="filter-section">
+                <label>Release Year:</label>
+                <div class="input-row">
+                    <input type="number" placeholder="Min">
+                    <input type="number" placeholder="Max">
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <label>Budget:</label>
+                <div class="input-row">
+                    <input type="text" placeholder="Min">
+                    <input type="text" placeholder="Max">
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <label>Revenue:</label>
+                <div class="input-row">
+                    <input type="text" placeholder="Min">
+                    <input type="text" placeholder="Max">
+                </div>
+            </div>
+
+            <button class="apply-btn">Apply Filters</button>
+        </aside>
+
+        <main class="content">
+            <section class="category">
+                <h2>New Releases</h2>
+                <div class="carousel-wrapper">
+                    <div class="movie-grid" id="row1">
+                        <div class="card"></div><div class="card"></div><div class="card"></div>
+                        <div class="card"></div><div class="card"></div><div class="card"></div>
+                    </div>
+                    <button class="next-arrow" onclick="scrollRow('row1')">❯</button>
+                </div>
+            </section>
+
+            <section class="category">
+                <h2>Trending</h2>
+                <div class="carousel-wrapper">
+                    <div class="movie-grid" id="row2">
+                        <div class="card"></div><div class="card"></div><div class="card"></div>
+                        <div class="card"></div><div class="card"></div><div class="card"></div>
+                    </div>
+                    <button class="next-arrow" onclick="scrollRow('row2')">❯</button>
+                </div>
+            </section>
+
+            <section class="category">
+                <h2>Top Rated</h2>
+                <div class="carousel-wrapper">
+                    <div class="movie-grid" id="row3">
+                        <div class="card"></div><div class="card"></div><div class="card"></div>
+                        <div class="card"></div><div class="card"></div><div class="card"></div>
+                    </div>
+                    <button class="next-arrow" onclick="scrollRow('row3')">❯</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 MovieVault. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollRow(id) {
+            const row = document.getElementById(id);
+            row.scrollBy({ left: 300, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
