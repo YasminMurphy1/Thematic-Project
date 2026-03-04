@@ -181,3 +181,14 @@ select, .input-row input {
     color: var(--text-dim);
     font-size: 0.8rem;
 }
+
+/* Keeps the cards looking correct inside the links */
+.card-link {
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.card-link:hover {
+    transform: scale(1.05); /* Gives a nice "pop" when you hover to click */
+}

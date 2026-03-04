@@ -9,16 +9,19 @@
 <body>
 
     <header class="navbar">
+    <a href="index.html" style="text-decoration: none; color: inherit;">
         <div class="logo-container">
             <div class="logo-icon"></div>
             <h1 class="logo-text">MOVIEVAULT</h1>
         </div>
-        <div class="search-container">
-            <span class="search-icon">🔍</span>
-            <input type="text" placeholder="Search for movie, actor, or director...">
-        </div>
-        <button class="login-btn">Log In</button>
-    </header>
+    </a>
+    
+    <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Search for movie, actor, or director...">
+    </div>
+    <button class="login-btn">Log In</button>
+</header>
 
     <div class="main-layout">
         <aside class="sidebar">
@@ -68,8 +71,12 @@
                 <h2>New Releases</h2>
                 <div class="carousel-wrapper">
                     <div class="movie-grid" id="row1">
-                        <div class="card"></div><div class="card"></div><div class="card"></div>
-                        <div class="card"></div><div class="card"></div><div class="card"></div>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
                     </div>
                     <button class="next-arrow" onclick="scrollRow('row1')">❯</button>
                 </div>
@@ -79,8 +86,12 @@
                 <h2>Trending</h2>
                 <div class="carousel-wrapper">
                     <div class="movie-grid" id="row2">
-                        <div class="card"></div><div class="card"></div><div class="card"></div>
-                        <div class="card"></div><div class="card"></div><div class="card"></div>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
                     </div>
                     <button class="next-arrow" onclick="scrollRow('row2')">❯</button>
                 </div>
@@ -90,8 +101,12 @@
                 <h2>Top Rated</h2>
                 <div class="carousel-wrapper">
                     <div class="movie-grid" id="row3">
-                        <div class="card"></div><div class="card"></div><div class="card"></div>
-                        <div class="card"></div><div class="card"></div><div class="card"></div>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
+                        <a href="movies.html" class="card-link"><div class="card"></div></a>
                     </div>
                     <button class="next-arrow" onclick="scrollRow('row3')">❯</button>
                 </div>
