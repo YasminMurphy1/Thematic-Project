@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieVault | Actor Name</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="cast.css"> 
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div class="logo-container">
+                <div class="logo-icon"></div>
+                <h1 class="logo-text">MOVIEVAULT</h1>
+            </div>
+        </a>
+        <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search for movie, actor, or director...">
+        </div>
+        <button class="login-btn">Log In</button>
+    </header>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="stats-box">
+                <h3>Quick Stats</h3>
+                <div class="stat-line"><span>Movies Saved:</span> <span>12</span></div>
+                <div class="stat-line"><span>Watched:</span> <span>4</span></div>
+                <div class="stat-line"><span>Favourites:</span> <span>3</span></div>
+                <div class="stat-line"><span>Avg Rating Given:</span> <span>7.8/10</span></div>
+            </div>
+
+            <div class="gallery-box">
+                <h3>Gallery</h3>
+                <div class="avatar-group">
+                    <div class="mini-avatar">S</div>
+                    <div class="mini-avatar">J</div>
+                    <div class="mini-avatar">E</div>
+                </div>
+                <button class="apply-btn">+ Add Friend</button>
+            </div>
+        </aside>
+
+        <main class="content">
+            <section class="profile-header">
+                <div class="profile-pic-large">CAST PICTURE</div>
+                <div class="profile-bio">
+                    <h1>ACTOR / DIRECTOR NAME</h1>
+                    <p class="subtitle">Actor • Director</p>
+                    <p class="description">Brief bio description about the actor and/or director. Include key roles and notable films they are recognized for.</p>
+                    <p class="meta-data">Born: August 11, 1983 (age 40) • Melbourne, Australia</p>
+                    <p class="meta-data">Nationality: Australian</p>
+                </div>
+            </section>
+
+            <section class="category">
+                <div class="section-flex">
+                    <h2>Known For</h2>
+                    <button class="see-all">See All ❯</button>
+                </div>
+                <div class="movie-grid">
+                    <div class="mini-card"><div class="mini-poster"></div><p>Movie Title</p><span>Role: Actor</span></div>
+                    <div class="mini-card"><div class="mini-poster"></div><p>Movie Title</p><span>Role: Actor</span></div>
+                    <div class="mini-card"><div class="mini-poster"></div><p>Movie Title</p><span>Role: Actor</span></div>
+                    <div class="mini-card"><div class="mini-poster"></div><p>Movie Title</p><span>Role: Actor</span></div>
+                </div>
+            </section>
+
+            <section class="category">
+                <h2>Filmography</h2>
+                <div class="tab-container">
+                    <button class="tab-btn active">AS ACTOR</button>
+                    <button class="tab-btn">AS DIRECTOR</button>
+                </div>
+                <div class="film-row">
+                    <span class="year">2022</span>
+                    <div class="tiny-thumb"></div>
+                    <span class="film-title">MOVIE TITLE</span>
+                    <span class="role-text">Role: Actor</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 MovieVault. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

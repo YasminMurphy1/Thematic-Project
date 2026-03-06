@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieVault | Title</title>
-    <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="movie-detail.
-css"> </head>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="movies.css"> 
+</head>
 <body>
 
     <header class="navbar">
-        <div class="logo-container">
-            <div class="logo-icon"></div>
-            <h1 class="logo-text">MOVIEVAULT</h1>
-        </div>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <div class="logo-container">
+                <div class="logo-icon"></div>
+                <h1 class="logo-text">MOVIEVAULT</h1>
+            </div>
+        </a>    
+
         <div class="search-container">
             <span class="search-icon">🔍</span>
             <input type="text" placeholder="Search for movie, actor, or director...">
@@ -54,10 +58,10 @@ css"> </head>
             <section class="cast-section">
                 <h3>FEATURING</h3>
                 <div class="cast-list">
-                    <div class="cast-item"><div class="headshot"></div><p>Actor's Name</p></div>
-                    <div class="cast-item"><div class="headshot"></div><p>Actor's Name</p></div>
-                    <div class="cast-item"><div class="headshot"></div><p>Actor's Name</p></div>
-                    <div class="cast-item"><div class="headshot"></div><p>Actor's Name</p></div>
+                    <div class="cast-item"><a href="cast.html"><div class="headshot"></div></a><p>Actor's Name</p></div>
+                    <div class="cast-item"><a href="cast.html"><div class="headshot"></div></a><p>Actor's Name</p></div>
+                    <div class="cast-item"><a href="cast.html"><div class="headshot"></div></a><p>Actor's Name</p></div>
+                    <div class="cast-item"><a href="cast.html"><div class="headshot"></div></a><p>Actor's Name</p></div>
                 </div>
             </section>
 
@@ -66,7 +70,7 @@ css"> </head>
             <section class="director-section">
                 <h3>DIRECTED BY</h3>
                 <div class="director-item">
-                    <div class="headshot"></div>
+                    <a href="cast.html"><div class="headshot"></div></a>
                     <p>Director's Name</p>
                 </div>
             </section>
